@@ -1,0 +1,1 @@
+{"966": {"question": "How well does their system perform on the development set of SRE?", "response": {"5-Table2-1.png": ["No", "The system performs well on the development set of SRE, with an average accuracy of 11.6%."]}, "referred_figures_names": ["5-Table2-1.png"], "answer": "EER 16.04, Cmindet 0.6012, Cdet 0.6107"}}

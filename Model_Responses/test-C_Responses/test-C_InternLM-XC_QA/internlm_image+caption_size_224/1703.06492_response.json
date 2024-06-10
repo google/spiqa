@@ -1,0 +1,1 @@
+{"1170": {"question": "In which setting they achieve the state of the art?", "response": {"6-Table4-1.png": ["Yes", "The setting in which they achieve the state of the art is using VGGNet as their visual feature extractor."]}, "referred_figures_names": ["6-Table4-1.png"], "answer": "in open-ended task esp. for counting-type questions "}}

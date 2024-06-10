@@ -1,0 +1,1 @@
+{"1314": {"question": "What are the results achieved from the introduced method?", "response": {"3-Table1-1.png": ["Yes ", "0.017 "]}, "referred_figures_names": ["3-Table1-1.png"], "answer": "Their model resulted in values of 0.476, 0.672 and 0.893 for recall at position 1,2 and 5 respectively in 10 candidates."}}

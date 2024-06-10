@@ -1,0 +1,1 @@
+{"1031": {"question": "what previous RNN models do they compare with?", "response": {"6-Table1-1.png": ["Yes ", "Penn treebank and wikitext-2. "]}, "referred_figures_names": ["6-Table1-1.png"], "answer": "Variational LSTM, CharCNN, Pointer Sentinel-LSTM, RHN, NAS Cell, SRU, QRNN, RAN, 4-layer skip-connection LSTM, AWD-LSTM, Quantized LSTM"}}

@@ -1,0 +1,1 @@
+{"644": {"question": "What TIMIT datasets are used for testing?", "response": {"4-Figure2-1.png": ["Yes", "The TIMIT datasets used for testing are the H and G sets."]}, "referred_figures_names": ["4-Figure2-1.png"], "answer": "Once split into 8 subsets (A-H), the test set used are blocks D+H and blocks F+H"}}

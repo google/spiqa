@@ -1,0 +1,1 @@
+{"326": {"question": "did they outperform previous methods?", "response": {"7-Table1-1.png": ["Yes</s>", "Yes, they did. The table shows that the models with larger embedding sizes (64 and 128) consistently achieved higher BLEU scores compared to the previous methods listed.</s>"]}, "referred_figures_names": ["7-Table1-1.png"], "answer": "Yes"}}

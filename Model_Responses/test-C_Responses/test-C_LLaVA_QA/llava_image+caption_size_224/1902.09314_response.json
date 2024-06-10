@@ -1,0 +1,1 @@
+{"199": {"question": "How big is their model?", "response": {"7-Table3-1.png": [" Yes", " The model sizes vary, with the smallest being 100 MB and the largest being 1000 MB."]}, "referred_figures_names": ["7-Table3-1.png"], "answer": "Proposed model has 1.16 million parameters and 11.04 MB."}}

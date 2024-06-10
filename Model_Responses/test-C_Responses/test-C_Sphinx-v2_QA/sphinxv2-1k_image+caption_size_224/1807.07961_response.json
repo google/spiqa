@@ -1,0 +1,1 @@
+{"726": {"question": "Do they evaluate only on English datasets?", "response": {"2-Table1-1.png": ["No", "No, they evaluate on multilingual datasets."]}, "referred_figures_names": ["2-Table1-1.png"], "answer": "Yes"}}

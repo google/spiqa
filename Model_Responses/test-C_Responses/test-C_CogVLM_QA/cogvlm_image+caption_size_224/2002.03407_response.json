@@ -1,0 +1,1 @@
+{"46": {"question": "Is the template-based model realistic?  ", "response": {"6-Table4-1.png": ["No.</s>", "The table does not provide a direct answer to whether the template-based model is realistic. It only presents ROUGE results for different models.</s>"]}, "referred_figures_names": ["6-Table4-1.png"], "answer": "Yes"}}

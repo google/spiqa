@@ -1,0 +1,1 @@
+{"201": {"question": "Can SCRF be used to pretrain the model?", "response": {"4-Figure2-1.png": ["No, SCRF cannot be used to pretrain the model as indicated in the image.</s>", "Yes, SCRF can be used to pretrain the model as indicated by the 'SCRF with SCRF pretraining' line in the graph.</s>"]}, "referred_figures_names": ["4-Figure2-1.png"], "answer": "No"}}

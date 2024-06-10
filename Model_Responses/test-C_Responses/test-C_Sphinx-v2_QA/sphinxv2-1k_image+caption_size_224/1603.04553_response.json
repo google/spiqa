@@ -1,0 +1,1 @@
+{"448": {"question": "Is the model presented in the paper state of the art?", "response": {"4-Table3-1.png": ["No", "Yes, the model presented in the paper is state of the art."]}, "referred_figures_names": ["4-Table3-1.png"], "answer": "No, supervised models perform better for this task."}}

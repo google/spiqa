@@ -1,0 +1,1 @@
+{"742": {"question": "Does model uses pretrained Transformer encoders?", "response": {"3-Figure2-1.png": [" Yes", " Yes"], "3-Table1-1.png": [" No", " Yes"]}, "referred_figures_names": ["3-Figure2-1.png", "3-Table1-1.png"], "answer": "No"}}

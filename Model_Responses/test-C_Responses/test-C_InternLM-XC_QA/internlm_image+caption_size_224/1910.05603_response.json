@@ -1,0 +1,1 @@
+{"353": {"question": "Is the model tested against any baseline?", "response": {"3-TableIV-1.png": ["No", "Yes, the model is tested against the baseline."], "3-TableIII-1.png": ["No", "Yes, the model is tested against the baseline in the VoxCeleb dataset."]}, "referred_figures_names": ["3-TableIV-1.png", "3-TableIII-1.png"], "answer": "No"}}

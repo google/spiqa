@@ -1,0 +1,1 @@
+{"1262": {"question": "How many layers of self-attention does the model have?", "response": {"8-Table6-1.png": ["No.", "The table does not provide information about the number of layers of self-attention in the model."]}, "referred_figures_names": ["8-Table6-1.png"], "answer": "1, 4, 8, 16, 32, 64"}}

@@ -1,0 +1,1 @@
+{"303": {"question": "How big are the datasets?", "response": {"6-Table2-1.png": [" Yes", " The datasets are quite large, with a significant number of documents in the training, dev, and test sets."]}, "referred_figures_names": ["6-Table2-1.png"], "answer": "In-house dataset consists of  3716 documents \nACE05 dataset consists of  1635 documents"}}

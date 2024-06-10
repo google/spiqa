@@ -1,0 +1,1 @@
+{"535": {"question": "How much improvement does their method get over the fine tuning baseline?", "response": {"3-Table1-1.png": ["No", "13.6"]}, "referred_figures_names": ["3-Table1-1.png"], "answer": "0.08 points on the 2011 test set, 0.44 points on the 2012 test set, 0.42 points on the 2013 test set for IWSLT-CE."}}

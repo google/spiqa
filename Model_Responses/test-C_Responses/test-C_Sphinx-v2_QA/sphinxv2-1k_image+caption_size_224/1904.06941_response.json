@@ -1,0 +1,1 @@
+{"1497": {"question": "How is performance measured?", "response": {"7-Table1-1.png": ["Yes", "AUC."], "7-Figure3-1.png": ["No", "FPR."]}, "referred_figures_names": ["7-Table1-1.png", "7-Figure3-1.png"], "answer": "they use ROC curves and cross-validation"}}

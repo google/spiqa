@@ -1,0 +1,1 @@
+{"1167": {"question": "What was their perplexity score?", "response": {"3-Table2-1.png": ["Yes ", "58.1 "], "3-Table3-1.png": ["Yes ", "132.91 "]}, "referred_figures_names": ["3-Table2-1.png", "3-Table3-1.png"], "answer": "Perplexity score 142.84 on dev and 138.91 on test"}}

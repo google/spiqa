@@ -1,0 +1,1 @@
+{"100": {"question": "What models other than standalone BERT is new model compared to?", "response": {"7-Table1-1.png": [" Yes", " The new model is compared to the standalone BERT model, as well as other BERTRAM variants."]}, "referred_figures_names": ["7-Table1-1.png"], "answer": "Only Bert base and Bert large are compared to proposed approach."}}

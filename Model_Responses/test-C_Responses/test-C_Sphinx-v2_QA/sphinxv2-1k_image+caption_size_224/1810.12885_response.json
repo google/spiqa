@@ -1,0 +1,1 @@
+{"1425": {"question": "Which models do they try out?", "response": {"8-Table4-1.png": ["Yes", "DocQA w/ ELMo, DocQA w/o ELMo, SAN, QANet, ASReader, LM, Random Guess."]}, "referred_figures_names": ["8-Table4-1.png"], "answer": "DocQA, SAN, QANet, ASReader, LM, Random Guess"}}

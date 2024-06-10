@@ -1,0 +1,1 @@
+{"1028": {"question": "How is the quality of singing voice measured?", "response": {"3-Table1-1.png": ["No ", "Method "], "3-Table2-1.png": ["Yes ", "Method, Naturalness, Similarity. "]}, "referred_figures_names": ["3-Table1-1.png", "3-Table2-1.png"], "answer": "Automatic: Normalized cross correlation (NCC)\nManual: Mean Opinion Score (MOS)"}}

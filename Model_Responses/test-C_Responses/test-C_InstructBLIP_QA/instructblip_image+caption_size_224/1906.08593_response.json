@@ -1,0 +1,1 @@
+{"104": {"question": "Which neural architecture do they use as a base for their attention conflict mechanisms?", "response": {"3-Figure3-1.png": ["1", "Generic Model"]}, "referred_figures_names": ["3-Figure3-1.png"], "answer": "GRU-based encoder, interaction block, and classifier consisting of stacked fully-connected layers."}}

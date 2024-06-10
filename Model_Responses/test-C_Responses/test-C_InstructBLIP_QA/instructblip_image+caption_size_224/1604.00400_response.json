@@ -1,0 +1,1 @@
+{"534": {"question": "What different correlations result when using different variants of ROUGE scores?", "response": {"5-Table2-1.png": ["1", "ROUGE-F, ROUGE-R, ROUGE-P, ROUGE-DIS, ROUGE-KW, ROUGE-NP"]}, "referred_figures_names": ["5-Table2-1.png"], "answer": "Using Pearson corelation measure,  for example, ROUGE-1-P is 0.257 and ROUGE-3-F 0.878."}}

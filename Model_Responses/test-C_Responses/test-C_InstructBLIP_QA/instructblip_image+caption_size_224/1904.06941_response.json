@@ -1,0 +1,1 @@
+{"1497": {"question": "How is performance measured?", "response": {"7-Figure3-1.png": ["1 2", "Receiver Operating Characteristic (ROC)"], "7-Table1-1.png": ["95% confidence interval", "Area under the curve"]}, "referred_figures_names": ["7-Figure3-1.png", "7-Table1-1.png"], "answer": "they use ROC curves and cross-validation"}}

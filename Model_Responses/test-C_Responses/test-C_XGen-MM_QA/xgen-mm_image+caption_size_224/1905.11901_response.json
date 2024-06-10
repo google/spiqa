@@ -1,0 +1,1 @@
+{"110": {"question": "what amounts of size were used on german-english?", "response": {"3-Table1-1.png": ["Yes ", "32000000, 188770, 75300, 138330 "]}, "referred_figures_names": ["3-Table1-1.png"], "answer": "Training data with 159000, 80000, 40000, 20000, 10000 and 5000 sentences, and 7584 sentences for development"}}

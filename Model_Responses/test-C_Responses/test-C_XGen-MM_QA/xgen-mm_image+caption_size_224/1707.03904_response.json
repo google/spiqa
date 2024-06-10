@@ -1,0 +1,1 @@
+{"192": {"question": "Which retrieval system was used for baselines?", "response": {"8-Figure4-1.png": ["Yes ", "GloDBS5000 "]}, "referred_figures_names": ["8-Figure4-1.png"], "answer": "The dataset comes with a ranked set of relevant documents. Hence the baselines do not use a retrieval system."}}

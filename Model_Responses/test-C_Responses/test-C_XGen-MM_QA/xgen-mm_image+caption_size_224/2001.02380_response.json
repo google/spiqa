@@ -1,0 +1,1 @@
+{"795": {"question": "Are some models evaluated using this metric, what are the findings?", "response": {"13-Figure4-1.png": ["No ", "Yes, the models are evaluated using the metric of F1 score. "]}, "referred_figures_names": ["13-Figure4-1.png"], "answer": "Yes"}}

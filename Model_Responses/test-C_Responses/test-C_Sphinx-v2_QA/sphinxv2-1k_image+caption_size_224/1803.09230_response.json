@@ -1,0 +1,1 @@
+{"706": {"question": "By how much, the proposed method improves BiDAF and DCN on SQuAD dataset?", "response": {"5-Table1-1.png": ["No", "1.5"]}, "referred_figures_names": ["5-Table1-1.png"], "answer": "In terms of F1 score, the Hybrid approach improved by 23.47% and 1.39% on BiDAF and DCN respectively. The DCA approach improved by 23.2% and 1.12% on BiDAF and DCN respectively."}}

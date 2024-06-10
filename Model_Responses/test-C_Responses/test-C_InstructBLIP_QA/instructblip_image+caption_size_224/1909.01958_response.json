@@ -1,0 +1,1 @@
+{"1199": {"question": "On what dataset is Aristo system trained?", "response": {"7-Table3-1.png": ["10th", "Aristo system is trained on a dataset of 10,000 questions and 15,000 answers."]}, "referred_figures_names": ["7-Table3-1.png"], "answer": "Aristo Corpus\nRegents 4th\nRegents 8th\nRegents `12th\nARC-Easy\nARC-challenge "}}

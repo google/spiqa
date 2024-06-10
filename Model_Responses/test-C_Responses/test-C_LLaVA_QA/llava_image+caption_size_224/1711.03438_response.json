@@ -1,0 +1,1 @@
+{"1439": {"question": "Can the model add new relations to the knowledge graph, or just new entities?", "response": {"3-Figure1-1.png": [" Yes", " The model can add new relations to the knowledge graph, as well as new entities."]}, "referred_figures_names": ["3-Figure1-1.png"], "answer": "The model does not add new relations to the knowledge graph."}}

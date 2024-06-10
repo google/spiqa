@@ -1,0 +1,1 @@
+{"735": {"question": "By how much is precission increased?", "response": {"9-Figure3-1.png": [" Yes", " The precision is increased by 10%."]}, "referred_figures_names": ["9-Figure3-1.png"], "answer": "ROUGE-1 increases by 0.05, ROUGE-2 by 0.06 and ROUGE-L by 0.09"}}

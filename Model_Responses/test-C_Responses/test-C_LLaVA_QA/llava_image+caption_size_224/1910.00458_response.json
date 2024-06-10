@@ -1,0 +1,1 @@
+{"523": {"question": "What are state of the art methods MMM is compared to?", "response": {"4-Table3-1.png": [" Yes", " MMM is compared to state of the art methods such as Bert-base, Bert-large, and Roberta-large."]}, "referred_figures_names": ["4-Table3-1.png"], "answer": "FTLM++, BERT-large, XLNet"}}

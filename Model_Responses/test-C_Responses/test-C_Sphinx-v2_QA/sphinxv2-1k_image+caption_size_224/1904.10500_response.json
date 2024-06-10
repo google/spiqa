@@ -1,0 +1,1 @@
+{"580": {"question": "Are the intent labels imbalanced in the dataset?", "response": {"5-Table2-1.png": ["No", "Yes."], "5-Table1-1.png": ["No", "No"]}, "referred_figures_names": ["5-Table2-1.png", "5-Table1-1.png"], "answer": "Yes"}}

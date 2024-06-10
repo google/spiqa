@@ -1,0 +1,1 @@
+{"696": {"question": "Is audio data per language balanced in dataset?", "response": {"3-Table1-1.png": ["No", "Yes."], "4-Table2-1.png": ["No", "Yes"]}, "referred_figures_names": ["3-Table1-1.png", "4-Table2-1.png"], "answer": "No"}}

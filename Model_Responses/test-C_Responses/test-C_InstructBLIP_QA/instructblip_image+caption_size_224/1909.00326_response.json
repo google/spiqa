@@ -1,0 +1,1 @@
+{"662": {"question": "How do they measure which words are under-translated by NMT models?", "response": {"7-Table1-1.png": ["15%", "Estimated word importance"]}, "referred_figures_names": ["7-Table1-1.png"], "answer": "They measured the under-translated words with low word importance score as calculated by Attribution.\nmethod"}}

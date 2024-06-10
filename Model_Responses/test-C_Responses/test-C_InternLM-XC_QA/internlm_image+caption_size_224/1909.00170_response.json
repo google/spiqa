@@ -1,0 +1,1 @@
+{"259": {"question": "Do they evaluate on NER data sets?", "response": {"7-Table6-1.png": ["Yes", "Yes, they evaluate on NER (Named Entity Recognition) datasets such as CoNLL-2003 and ONTONOTES 5.0."], "7-Table7-1.png": ["Yes", "Yes, they evaluate on NER datasets."]}, "referred_figures_names": ["7-Table6-1.png", "7-Table7-1.png"], "answer": "Yes"}}

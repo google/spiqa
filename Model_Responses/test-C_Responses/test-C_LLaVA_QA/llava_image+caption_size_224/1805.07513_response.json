@@ -1,0 +1,1 @@
+{"1323": {"question": "Do they compare with the MAML algorithm?", "response": {"3-Figure1-1.png": [" Yes", " Yes, the image and caption describe the use of a convolutional neural network (CNN) and a matching network, which are both compared with the MAML algorithm."]}, "referred_figures_names": ["3-Figure1-1.png"], "answer": "No"}}

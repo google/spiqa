@@ -1,0 +1,1 @@
+{"448": {"question": "Is the model presented in the paper state of the art?", "response": {"4-Table3-1.png": ["Yes", "Yes, the model presented in the paper achieves state-of-the-art performance on the CoNLL 2012 development and test datasets."]}, "referred_figures_names": ["4-Table3-1.png"], "answer": "No, supervised models perform better for this task."}}

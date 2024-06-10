@@ -1,0 +1,1 @@
+{"147": {"question": "What dataset do they use?", "response": {"4-Figure1-1.png": ["Yes ", "Source in their language. "]}, "referred_figures_names": ["4-Figure1-1.png"], "answer": "A parallel corpus where the source is an English expression of code and the target is Python code."}}

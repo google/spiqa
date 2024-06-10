@@ -1,0 +1,1 @@
+{"654": {"question": "What is the difference in performance between the interpretable system (e.g. vectors and cosine distance) and LSTM with ELMo system?", "response": {"3-Table1-1.png": ["Yes ", "0.017 "]}, "referred_figures_names": ["3-Table1-1.png"], "answer": "Accuracy of best interpretible system was 0.3945 while accuracy of LSTM-ELMo net was 0.6818."}}

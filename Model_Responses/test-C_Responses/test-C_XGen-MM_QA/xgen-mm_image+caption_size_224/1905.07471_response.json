@@ -1,0 +1,1 @@
+{"784": {"question": "How much better does this baseline neural model do?", "response": {"4-Figure2-1.png": ["Yes ", "Not very well. "]}, "referred_figures_names": ["4-Figure2-1.png"], "answer": "The model outperforms at every point in the\nimplicit-tuples PR curve reaching almost 0.8 in recall"}}
