@@ -1,6 +1,11 @@
 # SPIQA: A Dataset for Multimodal Question Answering in Scientific Papers
 
 
+The SPIQA dataset will be released on Huggingface and can be downloaded from:
+
+The data set is licensed under [CC-BY
+4.0](http://creativecommons.org/licenses/by/4.0/)
+
 Structure of testA metadata:
 
 ```

@@ -1,6 +1,19 @@
+# Copyright 2024 Google LLC
+#
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     https://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+"""
 ### Example Usage - CUDA_VISIBLE_DEVICES=7 python LLaVa-1.5_QA_Qasa_Evaluation_Image_only.py \ 
 ### --model_id llava-hf/llava-1.5-7b-hf --image_resolution 224 --response_root ../Responses/Test
-
+"""
 from transformers import AutoProcessor, LlavaForConditionalGeneration
 from transformers import BitsAndBytesConfig
 import torch
