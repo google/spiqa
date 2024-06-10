@@ -1,1 +1,0 @@
-{"1443": {"question": "Do the tweets come from a specific region?", "response": {"3-Figure1-1.png": ["No", "Yes, they do."], "3-Table2-1.png": ["No", "Yes, the tweets come from the United States."]}, "referred_figures_names": ["3-Figure1-1.png", "3-Table2-1.png"], "answer": "No"}}

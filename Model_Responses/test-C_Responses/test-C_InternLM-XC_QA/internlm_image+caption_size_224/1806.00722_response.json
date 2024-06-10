@@ -1,1 +1,0 @@
-{"326": {"question": "did they outperform previous methods?", "response": {"7-Table1-1.png": ["Yes", "Yes, the models using different embedding sizes outperformed previous methods on the IWSLT German-English and Turkish-English translation tasks."]}, "referred_figures_names": ["7-Table1-1.png"], "answer": "Yes"}}

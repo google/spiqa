@@ -1,1 +1,0 @@
-{"1273": {"question": "Do they visualize the difference between AM-Softmax and regular softmax?", "referred_figures_indices": [3], "response": "{'Answer': 'Yes, Figure 1 compares Softmax and AM-Softmax.'}", "all_figures_names": ["3-Figure2-1.png", "4-TableI-1.png", "2-Figure1-1.png", "4-Figure3-1.png"], "referred_figures_names": ["4-Figure3-1.png"], "answer": "Yes"}}

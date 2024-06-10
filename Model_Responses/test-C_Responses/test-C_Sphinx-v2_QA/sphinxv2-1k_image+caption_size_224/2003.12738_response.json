@@ -1,1 +1,0 @@
-{"750": {"question": "What approach performs better in experiments global latent or sequence of fine-grained latent variables?", "response": {"7-Table1-1.png": ["No", "sequence of fine-grained latent variables"]}, "referred_figures_names": ["7-Table1-1.png"], "answer": "PPL: SVT\nDiversity: GVT\nEmbeddings Similarity: SVT\nHuman Evaluation: SVT"}}

@@ -1,1 +1,0 @@
-{"841": {"question": "What datasets do they use?", "referred_figures_indices": [2], "response": "{'Answer': 'TYC, HOTFLIP, AUTOENCODER, yelp50'}", "all_figures_names": ["5-Figure2-1.png", "4-Table2-1.png", "3-Table1-1.png", "6-Figure3-1.png", "3-Figure1-1.png"], "referred_figures_names": ["3-Table1-1.png"], "answer": "1 IMDB dataset and 2 Yelp datasets"}}

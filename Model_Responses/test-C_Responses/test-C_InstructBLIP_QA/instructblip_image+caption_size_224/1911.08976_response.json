@@ -1,1 +1,0 @@
-{"1511": {"question": "what are the three methods presented in the paper?", "response": {"2-Table2-1.png": ["1 2", "BERT Re-ranking"]}, "referred_figures_names": ["2-Table2-1.png"], "answer": "Optimized TF-IDF, iterated TF-IDF, BERT re-ranking."}}

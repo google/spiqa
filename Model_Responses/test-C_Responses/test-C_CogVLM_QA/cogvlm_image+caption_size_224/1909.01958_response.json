@@ -1,1 +1,0 @@
-{"1199": {"question": "On what dataset is Aristo system trained?", "response": {"7-Table3-1.png": ["The Aristo system is trained on the 'Regents4th' dataset.</s>", "The Aristo system is trained on the 'Regents4th' dataset.</s>"]}, "referred_figures_names": ["7-Table3-1.png"], "answer": "Aristo Corpus\nRegents 4th\nRegents 8th\nRegents `12th\nARC-Easy\nARC-challenge "}}

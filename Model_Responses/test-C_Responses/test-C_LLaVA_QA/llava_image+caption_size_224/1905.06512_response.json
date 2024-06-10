@@ -1,1 +1,0 @@
-{"270": {"question": "Do they perform manual evaluation?", "response": {"7-Table2-1.png": [" No", " No, they do not perform manual evaluation. They use machine learning models to generate the example definitions."]}, "referred_figures_names": ["7-Table2-1.png"], "answer": "Yes"}}

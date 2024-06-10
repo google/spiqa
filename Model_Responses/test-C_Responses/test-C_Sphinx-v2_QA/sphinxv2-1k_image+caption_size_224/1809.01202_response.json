@@ -1,1 +1,0 @@
-{"207": {"question": "What baselines did they consider?", "response": {"6-Table5-1.png": ["No", "Random Forest"]}, "referred_figures_names": ["6-Table5-1.png"], "answer": "Linear SVM, RBF SVM, and Random Forest"}}

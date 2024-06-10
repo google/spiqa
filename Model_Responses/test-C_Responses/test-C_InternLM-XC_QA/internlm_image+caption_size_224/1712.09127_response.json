@@ -1,1 +1,0 @@
-{"46": {"question": "Do they evaluate grammaticality of generated text?", "response": {"10-Table1-1.png": ["No", "No, the table in the image compares word2vec and weGAN in terms of the Rand index and the classification accuracy for the CNN data set. It does not evaluate the grammaticality of generated text."]}, "referred_figures_names": ["10-Table1-1.png"], "answer": "No"}}

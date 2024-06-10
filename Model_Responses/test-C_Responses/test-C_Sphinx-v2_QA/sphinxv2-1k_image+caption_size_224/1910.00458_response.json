@@ -1,1 +1,0 @@
-{"523": {"question": "What are state of the art methods MMM is compared to?", "response": {"4-Table3-1.png": ["No", "BERT-Base, BERT-Large, XLNet, BERT-Base+MMM, BERT-Large+MMM, RoBERTa-Large, RoBERTa-Large+MMM, Human Performance, Ceiling Performance."]}, "referred_figures_names": ["4-Table3-1.png"], "answer": "FTLM++, BERT-large, XLNet"}}

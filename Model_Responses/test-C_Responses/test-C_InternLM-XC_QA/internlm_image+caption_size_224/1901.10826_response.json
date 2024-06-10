@@ -1,1 +1,0 @@
-{"1273": {"question": "Do they visualize the difference between AM-Softmax and regular softmax?", "response": {"4-Figure3-1.png": ["No", "Line 1 and line 2 trend together, with line 1 being above line 2."]}, "referred_figures_names": ["4-Figure3-1.png"], "answer": "Yes"}}

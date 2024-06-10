@@ -1,1 +1,0 @@
-{"1504": {"question": "How much is the gap between using the proposed objective and using only cross-entropy objective?", "response": {"7-Table2-1.png": ["1. 0", "0.75%"]}, "referred_figures_names": ["7-Table2-1.png"], "answer": "The mixed objective improves EM by 2.5% and F1 by 2.2%"}}

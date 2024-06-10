@@ -1,1 +1,0 @@
-{"1410": {"question": "What are state of the art methods authors compare their work with? ", "response": {"20-Table10-1.png": ["10", "State of the art methods authors compare their work with"], "16-Table5-1.png": ["2015", ""]}, "referred_figures_names": ["20-Table10-1.png", "16-Table5-1.png"], "answer": "ISOT dataset: LLVM\nLiar dataset: Hybrid CNN and LSTM with attention"}}

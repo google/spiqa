@@ -1,1 +1,0 @@
-{"1435": {"question": "What are the competing models?", "response": {"4-Table2-1.png": [" Yes", " The competing models are the ones that are being compared in the table."]}, "referred_figures_names": ["4-Table2-1.png"], "answer": "TEACHER FORCING (TF), SCHEDULED SAMPLING (SS),  SEQGAN, RANKGAN, LEAKGAN."}}

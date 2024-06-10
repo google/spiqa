@@ -1,1 +1,0 @@
-{"1296": {"question": "What is the size of the dataset?", "response": {"4-TableI-1.png": ["The size of the dataset is 828.</s>", "The size of the dataset is 828 for the train, 398 for the test, and 302 for the dev.</s>"]}, "referred_figures_names": ["4-TableI-1.png"], "answer": "3029"}}

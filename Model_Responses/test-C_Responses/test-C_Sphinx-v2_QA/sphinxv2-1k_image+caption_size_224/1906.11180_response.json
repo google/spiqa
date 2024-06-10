@@ -1,1 +1,0 @@
-{"1372": {"question": "What's the precision of the system?", "response": {"13-Table4-1.png": ["No", "1.798"], "12-Table3-1.png": ["No", "0.985"]}, "referred_figures_names": ["13-Table4-1.png", "12-Table3-1.png"], "answer": "0.8320 on semantic typing, 0.7194 on entity matching"}}

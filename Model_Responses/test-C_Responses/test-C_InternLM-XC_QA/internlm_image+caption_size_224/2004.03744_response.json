@@ -1,1 +1,0 @@
-{"424": {"question": "How many natural language explanations are human-written?", "response": {"8-Table3-1.png": ["Yes", "There are 11,898 natural language explanations that are human-written in the e-SNLI-VE-2.0 dataset."]}, "referred_figures_names": ["8-Table3-1.png"], "answer": "Totally 6980 validation and test image-sentence pairs have been corrected."}}

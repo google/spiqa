@@ -1,1 +1,0 @@
-{"85": {"question": "On top of BERT does the RNN layer work better or the transformer layer?", "response": {"4-Table2-1.png": ["No", "RNN layer works better."], "4-Table3-1.png": ["No", "RNN layer works better."]}, "referred_figures_names": ["4-Table2-1.png", "4-Table3-1.png"], "answer": "The transformer layer"}}

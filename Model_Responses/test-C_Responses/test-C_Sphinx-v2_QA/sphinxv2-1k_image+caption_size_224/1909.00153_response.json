@@ -1,1 +1,0 @@
-{"1215": {"question": "Do any of the evaluations show that adversarial learning improves performance in at least two different language families?", "response": {"3-Figure2-1.png": ["No", "Yes, the evaluation shows that adversarial learning improves performance in at least two different language families."]}, "referred_figures_names": ["3-Figure2-1.png"], "answer": "Yes"}}

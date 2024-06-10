@@ -1,1 +1,0 @@
-{"448": {"question": "Is the model presented in the paper state of the art?", "referred_figures_indices": [1], "response": "```json\n{\n  \"Answer\": \"Not state of the art\"\n}\n```", "all_figures_names": ["3-Table2-1.png", "4-Table3-1.png", "3-Table1-1.png"], "referred_figures_names": ["4-Table3-1.png"], "answer": "No, supervised models perform better for this task."}}

@@ -1,1 +1,0 @@
-{"841": {"question": "What datasets do they use?", "referred_figures_indices": [1], "response": "{'Answer': 'The datasets used are Yelp50, Yelp200 and IMDB400.'}", "all_figures_names": ["6-Figure3-1.png", "3-Table1-1.png", "4-Table2-1.png", "5-Figure2-1.png", "3-Figure1-1.png"], "referred_figures_names": ["3-Table1-1.png"], "answer": "1 IMDB dataset and 2 Yelp datasets"}}

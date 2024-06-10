@@ -1,1 +1,0 @@
-{"726": {"question": "Do they evaluate only on English datasets?", "response": {"2-Table1-1.png": ["No, they evaluate on English, Arabic, and Chinese datasets.</s>", "No, they evaluate on English, Arabic, and Chinese datasets.</s>"]}, "referred_figures_names": ["2-Table1-1.png"], "answer": "Yes"}}

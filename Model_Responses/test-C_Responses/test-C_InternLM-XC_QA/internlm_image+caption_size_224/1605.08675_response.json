@@ -1,1 +1,0 @@
-{"504": {"question": "Do they compare DeepER against other approaches?", "response": {"20-Table3-1.png": ["Yes", "Yes, they compare DeepER against other approaches such as quantities only (Quant), traditional NER (Nerf, Liner2), and their combination (Hybrid)."]}, "referred_figures_names": ["20-Table3-1.png"], "answer": "Yes"}}

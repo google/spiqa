@@ -1,1 +1,0 @@
-{"1330": {"question": "What are the citation intent labels in the datasets?", "response": {"4-Table2-1.png": ["Yes ", "Papers, citations. "]}, "referred_figures_names": ["4-Table2-1.png"], "answer": "Background, extends, uses, motivation, compare/contrast, and future work for the ACL-ARC dataset. Background, method, result comparison for the SciCite dataset."}}

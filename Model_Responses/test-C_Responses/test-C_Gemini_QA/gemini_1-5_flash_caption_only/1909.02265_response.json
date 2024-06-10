@@ -1,1 +1,0 @@
-{"1296": {"question": "What is the size of the dataset?", "referred_figures_indices": [0], "response": "```json\n{'Answer': 'The dataset size is not mentioned in the provided captions.'}\n```", "all_figures_names": ["4-TableI-1.png", "3-Figure2-1.png", "2-Figure1-1.png", "5-TableIII-1.png", "5-TableII-1.png"], "referred_figures_names": ["4-TableI-1.png"], "answer": "3029"}}

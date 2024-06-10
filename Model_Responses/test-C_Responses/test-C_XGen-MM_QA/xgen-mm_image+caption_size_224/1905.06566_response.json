@@ -1,1 +1,0 @@
-{"353": {"question": "Is the baseline a non-heirarchical model like BERT?", "response": {"7-Table1-1.png": ["Yes ", "Yes. "], "8-Table2-1.png": ["Yes ", "Yes. "]}, "referred_figures_names": ["7-Table1-1.png", "8-Table2-1.png"], "answer": "There were hierarchical and non-hierarchical baselines; BERT was one of those baselines"}}

@@ -1,1 +1,0 @@
-{"1345": {"question": "Was evaluation metrics and criteria were used to evaluate the output of the cascaded multimodal speech translation?", "response": {"5-Table1-1.png": [" Yes", " Yes"]}, "referred_figures_names": ["5-Table1-1.png"], "answer": "BLEU scores"}}

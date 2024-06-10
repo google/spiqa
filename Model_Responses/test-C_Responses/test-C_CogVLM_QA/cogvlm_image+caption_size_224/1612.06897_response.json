@@ -1,1 +1,0 @@
-{"1015": {"question": "How many examples do they have in the target domain?", "response": {"6-Figure1-1.png": ["They have 10k examples in the target domain.</s>", "They have 10k examples in the target domain.</s>"]}, "referred_figures_names": ["6-Figure1-1.png"], "answer": "Around 388k examples, 194k from tst2013 (in-domain) and 194k from newstest2014 (out-of-domain)"}}

@@ -1,1 +1,0 @@
-{"1436": {"question": "How is the input triple translated to a slot-filling task?", "response": {"1-Figure1-1.png": ["Yes ", "Answer: By replacing the question template with a slot-filling task. "]}, "referred_figures_names": ["1-Figure1-1.png"], "answer": "The relation R(x,y) is mapped onto a question q whose answer is y"}}

@@ -1,1 +1,0 @@
-{"1208": {"question": "Does the dataset contain non-English reviews?", "referred_figures_indices": [3], "response": " {'Answer': 'No, it does not contain non-English reviews.'}", "all_figures_names": ["3-Table3-1.png", "3-Table2-1.png", "2-Figure1-1.png", "2-Table1-1.png"], "referred_figures_names": ["2-Table1-1.png"], "answer": "Yes"}}

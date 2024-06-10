@@ -1,1 +1,0 @@
-{"1273": {"question": "Do they visualize the difference between AM-Softmax and regular softmax?", "response": {"4-Figure3-1.png": [" No", " Yes, the image shows a comparison between the AM-SincNet and the regular SincNet, with the AM-SincNet having a lower error rate."]}, "referred_figures_names": ["4-Figure3-1.png"], "answer": "Yes"}}

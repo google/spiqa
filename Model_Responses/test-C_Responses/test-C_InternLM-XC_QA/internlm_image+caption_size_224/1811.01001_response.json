@@ -1,1 +1,0 @@
-{"947": {"question": "Are the unobserved samples from the same distribution as the training data?", "response": {"6-Figure2-1.png": ["No", "No, the unobserved samples are not from the same distribution as the training data. The unobserved samples have a different shape and trend compared to the training data."]}, "referred_figures_names": ["6-Figure2-1.png"], "answer": "No"}}

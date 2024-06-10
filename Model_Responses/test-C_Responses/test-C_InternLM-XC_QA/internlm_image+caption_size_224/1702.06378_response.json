@@ -1,1 +1,0 @@
-{"201": {"question": "Can SCRF be used to pretrain the model?", "response": {"4-Figure2-1.png": ["Yes", "Yes, as shown in the figure, SCRF can be used to pretrain the model. Line 1 represents the convergence curves with CTC pretraining, while line 2 represents the convergence curves without CTC pretraining."]}, "referred_figures_names": ["4-Figure2-1.png"], "answer": "No"}}

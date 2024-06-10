@@ -1,1 +1,0 @@
-{"100": {"question": "What models other than standalone BERT is new model compared to?", "response": {"7-Table1-1.png": ["Yes ", "BERT (base), BERT (Attentive Mimicking), BERT (Shallow), BERT (RepetRam-replace), BERTRAM-add-gated, BERTRAM-large "]}, "referred_figures_names": ["7-Table1-1.png"], "answer": "Only Bert base and Bert large are compared to proposed approach."}}

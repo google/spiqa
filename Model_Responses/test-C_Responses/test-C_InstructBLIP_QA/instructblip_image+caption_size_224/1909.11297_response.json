@@ -1,1 +1,0 @@
-{"1221": {"question": "Which soft-selection approaches are evaluated?", "response": {"1-Figure1-1.png": ["1", "Wang et al., 2016"], "6-Table2-1.png": ["Yes", "BERT-Original"]}, "referred_figures_names": ["1-Figure1-1.png", "6-Table2-1.png"], "answer": "LSTM and BERT "}}
