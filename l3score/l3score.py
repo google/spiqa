@@ -22,8 +22,8 @@ import datetime
 import json
 import logging
 import os
-from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+import pathlib
+from typing import Any, Optional, Tuple
 
 import numpy as np
 import openai
@@ -45,7 +45,7 @@ def _normalize(text: str) -> str:
 
 
 def score_openai(
-    response: openai.ChatCompletion,
+    response: dict[str, Any],  # openai.ChatCompletion
     suffixes: list[str],
     complement_suffixes: list[str],
 ) -> float:
@@ -137,57 +137,57 @@ def score_openai(
   else:
     raise ValueError('Not the case where suffix or complement suffix is found.')
 
-  return renormalize_score(
-      yes_score=exclude_score, no_score=include_score
-  )
+  return renormalize_score(yes_score=exclude_score, no_score=include_score)
 
 
-class OpenAIClient():
+class OpenAIClient:
   """A proxy to query a OpenAI's API."""
 
   def __init__(
       self,
       model_name: str,
-      api_key_path: Path,
-      json_output_path: Path,
+      api_key: str,
+      json_output_path: Optional[str],
   ):
     """Initializes a OpenAIClient.
 
     Args:
       model_name: The name of the OpenAI model to use (e.g. 'gpt-4').
-      api_key_path: The path to the CNS file containing the OpenAI API key.
+      api_key: OpenAI API key string.
       json_output_path: If not None, the path to the directory to write JSON
         output to.
     """
 
-    with open(api_key_path) as f:
-      self._api_key = f.read().strip()
-    logging.info('Loaded OpenAI API key from: %s', api_key_path)
+    openai.api_key = api_key
     self._model_name = model_name
-    self._json_output_path = json_output_path
-    if self._json_output_path.exists():
-      self._json_output_path.mkdir(parents=True, exist_ok=True)
+    if json_output_path:
+      self._json_output_path = pathlib.Path(json_output_path)
+      if not self._json_output_path.exists():
+        self._json_output_path.mkdir(parents=True, exist_ok=True)
     self._timeout = 60
 
-  def _call_openai(
+  def call_openai(
       self,
-      message: List[Dict[str, Any]],
-      output_prefix: str,
+      prompt: str,
+      output_prefix: Optional[str],
       max_decode_steps: int = 1024,
       temperature: float = 0.0,
   ) -> str:
     """Call OpenAI chat completion API; save and return the response."""
-    response = openai.ChatCompletion.create(
-        api_key=self._api_key,
+    message = [{'role': 'user', 'content': prompt}]
+    response = openai.chat.completions.create(
         model=self._model_name,
         messages=message,
         temperature=temperature,
         max_tokens=max_decode_steps,
         top_p=1,
         timeout=self._timeout * 10,
-        request_timeout=self._timeout,
     )
+    response_json = response.model_dump_json()
+    response = json.loads(response_json)
     assert len(response['choices']) == 1
+    if not output_prefix:
+      output_prefix = ''
     if self._json_output_path:
       timestamp = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
       filename = os.path.join(
@@ -199,9 +199,9 @@ class OpenAIClient():
     text_response = response['choices'][0]['message']['content']
     return text_response
 
-  def _call_openai_with_score(
+  def call_openai_with_score(
       self,
-      message: List[Dict[str, Any]],
+      prompt: str,
       suffixes: list[str],
       output_prefix: Optional[str],
       max_decode_steps: int = 1024,
@@ -209,9 +209,12 @@ class OpenAIClient():
       complement_suffixes: list[str] | None = None,
   ) -> Tuple[str, float]:
     """Call OpenAI."""
+    message = [{'role': 'user', 'content': prompt}]
+    if not output_prefix:
+      output_prefix = ''
     assert suffixes, 'Please supply a suffix token to score the output.'
-    response = openai.ChatCompletion.create(
-        api_key=self._api_key,
+    # response = openai.ChatCompletion.create(
+    response = openai.chat.completions.create(
         model=self._model_name,
         messages=message,
         temperature=temperature,
@@ -222,13 +225,15 @@ class OpenAIClient():
         frequency_penalty=0,
         presence_penalty=0,
         timeout=self._timeout * 10,
-        request_timeout=self._timeout,
     )
+    response_json = response.model_dump_json()
+    response = json.loads(response_json)
     assert len(response['choices']) == 1
     if self._json_output_path:
       timestamp = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
-      filename = os.path.join(self._json_output_path,
-                              f'gpt4_{output_prefix}_{timestamp}.json')
+      filename = os.path.join(
+          self._json_output_path, f'gpt4_{output_prefix}_{timestamp}.json'
+      )
       with open(filename, 'w') as f:
         response['input_prompt'] = message
         json.dump(response, f)
