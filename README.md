@@ -1,4 +1,4 @@
-# SPIQA: A Dataset for MultimodalQuestion Answering on Scientific Papers
+# SPIQA: A Dataset for Multimodal Question Answering on Scientific Papers
 
 [**SPIQA: A Dataset for Multimodal Question Answering on Scientific Papers**]()    
 [Shraman Pramanick](https://shramanpramanick.github.io/), [Rama Chellappa](https://engineering.jhu.edu/faculty/rama-chellappa/), [Subhashini venugopalan](https://vsubhashini.github.io/)                
