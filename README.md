@@ -11,6 +11,7 @@ arXiv, 2024
 
 ## 📢 News
 
+- [July, 2024] [SPIQA Paper](https://arxiv.org/abs/2407.09413) is now up on arXiv.
 - [June, 2024] [SPIQA](https://huggingface.co/datasets/google/spiqa) is now live on Hugging Face🤗.
 
 ## 📁 Repository Structure
