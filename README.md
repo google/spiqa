@@ -11,7 +11,7 @@ Paper (Coming Soon) | [SPIQA Dataset](https://huggingface.co/datasets/google/spi
 
 ## 📢 News
 
-- [June, 2024] [SPIQA](https://huggingface.co/datasets/google/spiqa/tree/main/test-C) is now live on Hugging Face🤗.
+- [June, 2024] [SPIQA](https://huggingface.co/datasets/google/spiqa) is now live on Hugging Face🤗.
 
 ## 📁 Repository Structure
 
