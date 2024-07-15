@@ -3,7 +3,7 @@
 [**SPIQA: A Dataset for Multimodal Question Answering on Scientific Papers**]()    
 [Shraman Pramanick](https://shramanpramanick.github.io/), [Rama Chellappa](https://engineering.jhu.edu/faculty/rama-chellappa/), [Subhashini venugopalan](https://vsubhashini.github.io/)                
 arXiv, 2024               
-Paper (Coming Soon) | [SPIQA Dataset](https://huggingface.co/datasets/google/spiqa/tree/main/test-C) | Project Page (Coming Soon)
+[Paper](https://arxiv.org/abs/2407.09413) | [SPIQA Dataset](https://huggingface.co/datasets/google/spiqa) | Project Page (Coming Soon)
 
 > **TL;DR:** we introduce SPIQA (**S**cientific **P**aper **I**mage **Q**uestion **A**nswering), the first large-scale QA dataset specifically designed to interpret complex figures and tables within the context of scientific research articles across various domains of computer science.
 
@@ -31,7 +31,7 @@ Each directory contains different python scripts to evaluate various models and 
 
 ## 🗄️ Dataset
 
-[SPIQA](https://huggingface.co/datasets/google/spiqa/tree/main/test-C) is publicly available on Hugging Face🤗.
+[SPIQA](https://huggingface.co/datasets/google/spiqa) is publicly available on Hugging Face🤗.
 
 #### Dataset Use and Starter Snippets
 
