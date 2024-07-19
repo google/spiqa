@@ -91,4 +91,11 @@ SPIQA is licensed under a [APACHE 2.0 License](./LICENSE).
 ## 🎓 Citing SPIQA
 
 ```
+@article{pramanick2024spiqa,
+  title={SPIQA: A Dataset for Multimodal Question Answering on Scientific Papers},
+  author={Pramanick, Shraman and Chellappa, Rama and Venugopalan, Subhashini},
+  journal={arXiv preprint arXiv:2407.09413},
+  year={2024}
+}
 ```
+
