@@ -1,9 +1,9 @@
 # SPIQA: A Dataset for Multimodal Question Answering on Scientific Papers
 
-[**SPIQA: A Dataset for Multimodal Question Answering on Scientific Papers**]()    
-[Shraman Pramanick](https://shramanpramanick.github.io/), [Rama Chellappa](https://engineering.jhu.edu/faculty/rama-chellappa/), [Subhashini venugopalan](https://vsubhashini.github.io/)                
+[**SPIQA: A Dataset for Multimodal Question Answering on Scientific Papers**](https://arxiv.org/abs/2407.09413)    
+[Shraman Pramanick](https://shramanpramanick.github.io/), [Rama Chellappa](https://engineering.jhu.edu/faculty/rama-chellappa/), [Subhashini Venugopalan](https://vsubhashini.github.io/)     
 arXiv, 2024               
-[Paper](https://arxiv.org/abs/2407.09413) | [SPIQA Dataset](https://huggingface.co/datasets/google/spiqa) | Project Page (Coming Soon)
+[Paper](https://arxiv.org/abs/2407.09413) | [SPIQA Dataset](https://huggingface.co/datasets/google/spiqa)
 
 > **TL;DR:** we introduce SPIQA (**S**cientific **P**aper **I**mage **Q**uestion **A**nswering), the first large-scale QA dataset specifically designed to interpret complex figures and tables within the context of scientific research articles across various domains of computer science.
 
@@ -11,8 +11,15 @@ arXiv, 2024
 
 ## 📢 News
 
+- [July, 2024] We update instructioons to run evaluation with different baselines on all three tasks, and release the [responses by baselines](https://drive.google.com/drive/folders/1Y_27zme95jz9cH1UA8cphlRKhi3afwtA?usp=sharing) to fully reproduce the reported numbers.
 - [July, 2024] [SPIQA Paper](https://arxiv.org/abs/2407.09413) is now up on arXiv.
 - [June, 2024] [SPIQA](https://huggingface.co/datasets/google/spiqa) is now live on Hugging Face🤗.
+
+## 📝 TODOs
+
+- [ ] Starter code snippet for L3Score and instructions to run metric computation scripts.
+- [x] Release responses by baselines to fully reproduce the reported numbers.
+- [x] Instructions to run evaluation. 
 
 ## 📁 Repository Structure
 
@@ -28,7 +35,7 @@ spiqa
         └── Computation of BLEU, ROUGE, CIDEr, METEOR, BERTScore and L3Score
     
 ```
-Each directory contains different python scripts to evaluate various models and compute different metrics.
+Each directory contains different python scripts to evaluate various models on three different tasks and compute metrics.
 
 ## 🗄️ Dataset
 
@@ -78,15 +85,63 @@ print(testC_metadata[paper_id]['question']) ## Questions
 print(testC_metadata[paper_id]['answer']) ## Answers
 ```
 
+## 🧪 Evaluation
+
+##### Setting up Conda Environment
+
+We use [conda-pack](https://conda.github.io/conda-pack/) to share the required environment for every baseline model for its greater portability. First, start with downloading the [environment tars](http://www.cis.jhu.edu/~shraman/SPIQA/conda_envs_spiqa.tar.gz).
+```bash
+wget http://www.cis.jhu.edu/~shraman/SPIQA/conda_envs_spiqa.tar.gz
+tar -xvzf conda_envs_spiqa.tar.gz && rm conda_envs_spiqa.tar.gz
+```
+Activate individual envs as follows. In the following snippet, we show an example for running the Gemini 1.5 Pro model. 
+```bash
+mkdir -p gemini_env
+tar -xzf envs/gemini.tar.gz -C gemini_env
+source gemini_env/bin/activate
+```
+
+- ##### Evaluate Gemini 1.5 Pro for Direct QA with Figures and Tables on test-A
+
+For running the closed-weight models, first provide the API key from corresponding accounts. For example, to run Gemini, fill in the api_key in the scripts `genai.configure(api_key=<Your_API_Key>)`.
+```bash
+cd evals/test-a/closed_models/
+python gemini_qa_test-a_evaluation_image+caption.py --response_root <path_to_save_responses> --image_resolution -1 --model_id gemini-1.5-pro
+```
+
+- ##### Evaluate Gemini 1.5 Pro for Direct QA with Full Paper on test-A
+```bash
+cd evals/test-a/closed_models/
+python gemini_qa_test-a_evaluation_image+caption+full_text.py --response_root <path_to_save_responses> --image_resolution -1 --model_id gemini-1.5-pro
+```
+
+- ##### Evaluate Gemini 1.5 Pro for CoT QA on test-A
+```bash
+cd evals/test-a/closed_models/
+python gemini_cot_qa_test-a_evaluation_image+caption.py --response_root <path_to_save_responses> --image_resolution -1 --model_id gemini-1.5-pro
+```
+
+We list the URLs/Model IDs of all baselines in the [MODEL Zoo](./Model_MOO.md). The names of the various scripts clearly indicate the respective tasks, baseline settings, and evaluation splits.
+
+**NOTE:** To run the SPHINX-v2 baseline model, clone the [LLaMA2-Accessory](https://github.com/Alpha-VLLM/LLaMA2-Accessory) github repository, create an environment following the [installation guidelines](https://github.com/Alpha-VLLM/LLaMA2-Accessory/tree/main/SPHINX#installation), and download the [SPHINX-v2-1k](https://huggingface.co/Alpha-VLLM/LLaMA2-Accessory/tree/main/finetune/mm/SPHINX/SPHINX-v2-1k) checkpoint.
+
+## ✅ Reproducible Results
+
+To reproduce the results reported in our [paper](https://arxiv.org/abs/2407.09413), we provide the outputs of all open- and closed-source models [here](https://drive.google.com/drive/folders/1Y_27zme95jz9cH1UA8cphlRKhi3afwtA?usp=sharing). Please find the instructions for the metric computation below.
+
+## 📊 Metric Computation
+
 ## ✉️ Contact
+
 This repository is created and maintained by [Shraman](https://shramanpramanick.github.io/) and [Subhashini](https://vsubhashini.github.io/). Questions and discussions are welcome via spraman3@jhu.edu and vsubhashini@google.com.
 
 ## 🙏 Acknowledgements
 
+We evaluate six different open source models on SPIQA: [LLaVA 1.5](https://huggingface.co/llava-hf/llava-1.5-7b-hf), [InstructBLIP](https://huggingface.co/Salesforce/instructblip-vicuna-7b), [XGen-MM](https://huggingface.co/Salesforce/xgen-mm-phi3-mini-instruct-r-v1), [InternLM-XC](https://huggingface.co/internlm/internlm-xcomposer2-vl-7b), [SPHINX-v2](https://github.com/Alpha-VLLM/LLaMA2-Accessory/tree/main/SPHINX) and [CogVLM](https://huggingface.co/THUDM/cogvlm-chat-hf). We thank the respective authors for releasing the model weights. We are grateful to the colleagues in the Science Assistant team at Google Research for valuable discussions and support to our project.
 
 ## 📄 License
 
-SPIQA is licensed under a [APACHE 2.0 License](./LICENSE).
+SPIQA evaluation code and library for L3Score in this Github repository are licensed under a [APACHE 2.0 License](./LICENSE).
 
 ## 🎓 Citing SPIQA
 
@@ -98,4 +153,3 @@ SPIQA is licensed under a [APACHE 2.0 License](./LICENSE).
   year={2024}
 }
 ```
-
