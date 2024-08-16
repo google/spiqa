@@ -17,7 +17,8 @@ arXiv, 2024
 
 ## 📝 TODOs
 
-- [ ] Starter code snippet for L3Score and instructions to run metric computation scripts.
+- [ ] Instructions to run metric computation scripts.
+- [x] Starter code snippet for L3Score.
 - [x] Release responses by baselines to fully reproduce the reported numbers.
 - [x] Instructions to run evaluation. 
 
@@ -128,6 +129,39 @@ We list the URLs/Model IDs of all baselines in the [MODEL Zoo](./Model_MOO.md). 
 ## ✅ Reproducible Results
 
 To reproduce the results reported in our [paper](https://arxiv.org/abs/2407.09413), we provide the outputs of all open- and closed-source models [here](https://drive.google.com/drive/folders/1Y_27zme95jz9cH1UA8cphlRKhi3afwtA?usp=sharing). Please find the instructions for the metric computation below.
+
+## 💡 Starter Code Snippet for L3Score
+
+```bash
+from metrics.llmlogscore.llmlogscore import OpenAIClient
+
+client = OpenAIClient(
+    model_name='gpt-4o',
+    api_key=<openai_api_key>,
+    json_output_path='./saved_output_l3score/',
+)
+
+_PROMPT = 'You are given a question, ground-truth answer, and a candidate answer. Question: <question> \nGround-truth answer: <GT> \nCandidate answer: <answer> \n\
+Is the semantic meaning of the ground-truth and candidate answers similar? Answer in one word - Yes or No.'
+_SUFFIXES_TO_SCORE = [' yes', ' yeah']
+_COMPLEMENT_SUFFIXES = [' no']
+
+question = 'Where is Niagara falls located?'
+gt = 'Niagara Falls is located on the border between the United States and Canada, specifically between New York State and Ontario Province.'
+candidate_answer = 'Niagara Falls is situated on the Niagara River, which connects Lake Erie to Lake Ontario, \
+and lies on the international border between the United States (New York State) and Canada (Ontario Province).'
+
+prompt_current = _PROMPT.replace('<question>', question).replace('<GT>', gt).replace('<answer>', candidate_answer)
+response, prob_yes = client.call_openai_with_score(
+            prompt=prompt_current,
+            suffixes=_SUFFIXES_TO_SCORE,
+            complement_suffixes=_COMPLEMENT_SUFFIXES,
+            output_prefix=''
+            )
+
+print('L3Score: ', prob_yes)
+#### >>> L3Score:  0.9999999899999982
+```
 
 ## 📊 Metric Computation
 
