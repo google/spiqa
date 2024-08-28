@@ -160,7 +160,20 @@ response, prob_yes = client.call_openai_with_score(
             )
 
 print('L3Score: ', prob_yes)
-#### >>> L3Score:  0.9999999899999982
+#### >>> L3Score: 0.9999999899999982
+
+wrong_answer = 'Niagara Falls is located on the border between the United States and Mexico, specifically between New York State and Ontario Province.'
+
+prompt_current = _PROMPT.replace('<question>', question).replace('<GT>', gt).replace('<answer>', wrong_answer)
+response, prob_yes = client.call_openai_with_score(
+            prompt=prompt_current,
+            suffixes=_SUFFIXES_TO_SCORE,
+            complement_suffixes=_COMPLEMENT_SUFFIXES,
+            output_prefix=''
+            )
+
+print('L3Score: ', prob_yes)
+#### >>> L3Score: 3.653482080241728e-08
 ```
 
 ## 📊 Metric Computation
