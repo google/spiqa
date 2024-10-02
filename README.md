@@ -11,6 +11,7 @@ arXiv, 2024
 
 ## 📢 News
 
+- [Sept, 2024] SPIQA has been accepted for publication at NeurIPS 2024 in the Datasets and Benchmarks track.
 - [July, 2024] We update instructions to run evaluation with different baselines on all three tasks, and release the [responses by baselines](https://drive.google.com/drive/folders/1Y_27zme95jz9cH1UA8cphlRKhi3afwtA?usp=sharing) to fully reproduce the reported numbers.
 - [July, 2024] [SPIQA Paper](https://arxiv.org/abs/2407.09413) is now up on arXiv.
 - [June, 2024] [SPIQA](https://huggingface.co/datasets/google/spiqa) is now live on Hugging Face🤗.
@@ -183,7 +184,7 @@ SPIQA evaluation code and library for L3Score in this Github repository are lice
 @article{pramanick2024spiqa,
   title={SPIQA: A Dataset for Multimodal Question Answering on Scientific Papers},
   author={Pramanick, Shraman and Chellappa, Rama and Venugopalan, Subhashini},
-  journal={arXiv preprint arXiv:2407.09413},
+  journal={NeurIPS},
   year={2024}
 }
 ```
