@@ -2,7 +2,7 @@
 
 [**SPIQA: A Dataset for Multimodal Question Answering on Scientific Papers**](https://arxiv.org/abs/2407.09413)    
 [Shraman Pramanick](https://shramanpramanick.github.io/), [Rama Chellappa](https://engineering.jhu.edu/faculty/rama-chellappa/), [Subhashini Venugopalan](https://vsubhashini.github.io/)     
-arXiv, 2024               
+NeurIPS 2024               
 [Paper](https://arxiv.org/abs/2407.09413) | [SPIQA Dataset](https://huggingface.co/datasets/google/spiqa)
 
 > **TL;DR:** we introduce SPIQA (**S**cientific **P**aper **I**mage **Q**uestion **A**nswering), the first large-scale QA dataset specifically designed to interpret complex figures and tables within the context of scientific research articles across various domains of computer science.
