@@ -2,7 +2,7 @@
 
 [**SPIQA: A Dataset for Multimodal Question Answering on Scientific Papers**](https://arxiv.org/abs/2407.09413)    
 [Shraman Pramanick](https://shramanpramanick.github.io/), [Rama Chellappa](https://engineering.jhu.edu/faculty/rama-chellappa/), [Subhashini Venugopalan](https://vsubhashini.github.io/)     
-NeurIPS 2024               
+NeurIPS D&B 2024               
 [Paper](https://arxiv.org/abs/2407.09413) | [SPIQA Dataset](https://huggingface.co/datasets/google/spiqa)
 
 > **TL;DR:** we introduce SPIQA (**S**cientific **P**aper **I**mage **Q**uestion **A**nswering), the first large-scale QA dataset specifically designed to interpret complex figures and tables within the context of scientific research articles across various domains of computer science.
@@ -11,6 +11,7 @@ NeurIPS 2024
 
 ## 📢 News
 
+- [Jan, 2025] We update instructions to run metric evaluation scripts for all three tasks.
 - [Sept, 2024] SPIQA has been accepted for publication at [NeurIPS 2024](https://neurips.cc/Conferences/2024) in the Datasets and Benchmarks track.
 - [July, 2024] We update instructions to run evaluation with different baselines on all three tasks, and release the [responses by baselines](https://drive.google.com/drive/folders/1Y_27zme95jz9cH1UA8cphlRKhi3afwtA?usp=sharing) to fully reproduce the reported numbers.
 - [July, 2024] [SPIQA Paper](https://arxiv.org/abs/2407.09413) is now up on arXiv.
@@ -18,7 +19,7 @@ NeurIPS 2024
 
 ## 📝 TODOs
 
-- [ ] Instructions to run metric computation scripts.
+- [x] Instructions to run metric computation scripts.
 - [x] Starter code snippet for L3Score.
 - [x] Release responses by baselines to fully reproduce the reported numbers.
 - [x] Instructions to run evaluation. 
@@ -178,6 +179,61 @@ print('L3Score: ', prob_yes)
 ```
 
 ## 📊 Metric Computation
+
+To compute the reported metrics, start with downloading our metric computation script from [here](https://drive.google.com/file/d/1CeYvOoB1jMEhEgJ_W2dm1OThMXptKCU6/view?usp=sharing) which is slightly modified from its [original source](https://github.com/tylin/coco-caption/tree/master/pycocoevalcap).
+
+```bash
+gdown --fuzzy https://drive.google.com/file/d/1CeYvOoB1jMEhEgJ_W2dm1OThMXptKCU6/view?usp=sharing
+tar -xzvf pycocoevalcap_spiqa.tar.gz && rm -rf pycocoevalcap_spiqa.tar.gz
+```
+
+We provide different script to compute the metrics for open- and closed-courced models. We show an example on how to run each diffrent script here. 
+
+##### Direct QA with Figures and Tables for Open-source Models
+
+We provide two different scripts, one for computing exiting metrics (METEOR, ROUGE-L, CIDEr, BERTScore, BLEU), and the other for computing L3Score. Since we use GPT-4o to compute L3Score, this script requires an openai API key.
+
+```bash
+## Here we show example to compute the performance of LLaVA-1.5-7B on test-A
+cd metrics
+python open_models_metrics.py --response_root ../model_responses/test-a_responses/test-a_llava_qa/llava_image+caption_size_224/
+python open_models_l3score.py --response_root ../model_responses/test-a_responses/test-a_llava_qa/llava_image+caption_size_224/ --openai_api_key <openai_api_key>
+```
+
+##### Direct QA with Figures and Tables for Close-source Models
+
+Similarly for close-source models, we provide two different scripts.
+
+```bash
+## Here we show example to compute the performance of Gemini 1.5 Flash on test-A
+cd metrics
+python close_models_metrics.py --response_root ../model_responses/test-a_responses/test-a_gemini_qa/gemini_1-5_flash_image+caption_size_full/
+python close_models_l3score.py --response_root ../model_responses/test-a_responses/test-a_gemini_qa/gemini_1-5_flash_image+caption_size_full/ --openai_api_key <openai_api_key>
+```
+
+##### Direct QA with Full paper
+
+We only report the performance of close-source models for direct QA with full paper, and the same scripts can be used for computing metrics on this task.
+
+```bash
+## Here we show example to compute the performance of Gemini 1.5 Flash on test-B
+cd metrics
+python close_models_metrics.py --response_root ../model_responses/test-b_responses/test-b_gemini_qa/gemini_1-5_flash_image+caption+text_size_full/
+python close_models_l3score.py --response_root ../model_responses/test-b_responses/test-b_gemini_qa/gemini_1-5_flash_image+caption+text_size_full/ --openai_api_key <openai_api_key>
+```
+
+##### CoT QA with Figures and Tables
+
+We provide additional scripts for evaluation on CoT QA task. We only report the performance of close-source models for CoT QA.
+
+```bash
+## Here we show example to compute the performance of Gemini 1.5 Flash on test-B
+cd metrics
+python close_models_metrics_CoT.py --response_root ../model_responses/test-b_responses/test-b_gemini_qa/gemini_1-5_flash_cot_qa_image+caption_size_full/
+python close_models_l3score_CoT.py --response_root ../model_responses/test-b_responses/test-b_gemini_qa/gemini_1-5_flash_cot_qa_image+caption_size_full/ --openai_api_key <openai_api_key>
+```
+
+Note: Due to changes in OpenAI's GPT-4o checkpoint, the L3Score values reported in the paper might differ from those you get when running our metric computation scripts. However, our underlying algorithm for L3Score stays the same, and can be used with any language model.
 
 ## ✉️ Contact
 
